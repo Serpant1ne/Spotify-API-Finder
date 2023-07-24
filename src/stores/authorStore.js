@@ -17,7 +17,7 @@ export const useAuthorStore = defineStore('dataStore', {
             
             const res = await fetch('https://api.spotify.com/v1/search?q=' + authorName + '&type=artist&market=US&limit=1', {
                 headers: {
-                    Authorization: 'Bearer BQCecbrrIku0Wvj4w3LHMQM6Okkk4_6sonpPZl_NnYTULWZ-xN87NjXhfOhgAWjGiA2QsU3FfYXNJDNH6okvU6pZrNGeHr1njKxHW1ku-52Eq94zCDo' 
+                    Authorization: 'token' 
                 }
             })
             const data = await res.json()

@@ -12,32 +12,32 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: HomeView
+      name: 'home',
+      component: HomeView,
     },
     {
-      path: '/Authors',
-      name: 'Authors',
-      component: AuthorsView
+      path: '/Author',
+      name: 'author',
+      component: AuthorsView,
     },
     {
       path: '/album',
-      name: 'Albums',
-      component: AlbumView
+      name: 'album',
+      component: AlbumView,
     },
     {
-      path: '/genres',
-      name: 'Genres',
+      path: '/genre',
+      name: 'genre',
       component: GenresView
     },
     {
-      path: '/playlists',
-      name: 'Playlists',
+      path: '/playlist',
+      name: 'playlist',
       component: PlaylistsView
     },
     {
-      path: '/tracks',
-      name: 'Tracks',
+      path: '/track',
+      name: 'track',
       component: TracksView
     },
   ]

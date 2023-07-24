@@ -12,3 +12,9 @@ nav .router-link-active{
     background-color: #fca5a5;
     color: #191414;
 }
+
+.material-icons{
+    font-weight: 300;
+    color: #191414;
+    font-size: 28px;
+}

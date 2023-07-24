@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        genres
+        choose one type
     </div>
 </template>
 <script>

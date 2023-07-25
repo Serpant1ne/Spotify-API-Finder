@@ -29,7 +29,7 @@ export default {
       <RouterLink to="/" class="text-text text-4xl font-bold mb-6 mx-auto">Spotify API Finder</RouterLink>
 
       <nav class="text-accent font-light min-w-lg flex justify-between mx-auto mb-6 gap-8">
-        <RouterLink class="py-1 px-2 active" to="/author">Authors</RouterLink>
+        <RouterLink class="py-1 px-2 active" to="/artist">Artists</RouterLink>
         <RouterLink class="py-1 px-2" to="/album">Albums</RouterLink>
         <RouterLink class="py-1 px-2" to="/genre">Genres</RouterLink>
         <RouterLink class="py-1 px-2" to="/track">Tracks</RouterLink>

@@ -1,6 +1,6 @@
 <template lang="">
   <div>
-   authors
+   artists
   </div>
 </template>
 <script>

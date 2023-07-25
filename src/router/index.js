@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import AuthorsView from '../views/AuthorsView.vue'
+import ArtistsView from '../views/ArtistsView.vue'
 import AlbumView from '../views/AlbumView.vue'
 import GenresView from '../views/GenresView.vue'
 import PlaylistsView from '../views/PlaylistsView.vue'
@@ -16,9 +16,9 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: '/Author',
-      name: 'author',
-      component: AuthorsView,
+      path: '/artist',
+      name: 'artist',
+      component: ArtistsView,
     },
     {
       path: '/album',

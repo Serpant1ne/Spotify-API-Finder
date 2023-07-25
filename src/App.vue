@@ -1,7 +1,9 @@
 <script>
+import { authorize, getCode } from './assets/authorization'
 import { RouterLink, RouterView } from 'vue-router'
 import SearchForm from './components/SearchForm.vue'
 import { ref } from 'vue'
+import { useUserStore } from './stores/userStore'
 export default {
   components: { SearchForm },
   data() {
@@ -10,12 +12,23 @@ export default {
     }
   },
   created() {
+    const userStore = useUserStore()
+
     this.searchType = this.$route.name
+    getCode()
+    if(userStore.code && userStore.codeVerifier && !userStore.accessToken){
+      userStore.getAccessToken()
+      console.log('access token', userStore.accessToken)
+    }
+
   },
   watch: {
     $route(to, from) {
       this.searchType = to.name
     }
+  },
+  methods: {
+    authorize
   },
   setup() {
 
@@ -37,9 +50,9 @@ export default {
       </nav>
       <SearchForm :type="searchType" />
     </header>
-
+    <button @click="authorize">login</button>
     <RouterView />
   </body>
 </template>
 
-<style scoped></style>
+

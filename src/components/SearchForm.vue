@@ -22,6 +22,9 @@ export default {
   },
   computed: {
     placeholder() {
+      if (this.type === 'home') {
+        return 'Search'
+      }
       return 'Search ' + this.type
     }
   }
